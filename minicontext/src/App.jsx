@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Login from "./cpmponents/login.jsx";
+import Profile from "./cpmponents/profile.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       </div>
 
       <Login />
+      <Profile />
     </>
   );
 }
