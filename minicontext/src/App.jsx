@@ -4,10 +4,11 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Login from "./cpmponents/login.jsx";
 import Profile from "./cpmponents/profile.jsx";
+import UserContextProvider from "./context/UserContextProvider.jsx";
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -19,7 +20,7 @@ function App() {
 
       <Login />
       <Profile />
-    </>
+    </UserContextProvider>
   );
 }
 
